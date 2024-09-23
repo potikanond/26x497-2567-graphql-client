@@ -31,6 +31,7 @@ const query = gql`
 
 export default function Home() {
   const { data, loading, refetch } = useQuery<GetPostsResponse>(query);
+  
   return (
     <div style={{ maxWidth: "600px" }} className="mx-auto">
       <p className="display-6 text-center"> ✨ Simple Social App ✨</p>
